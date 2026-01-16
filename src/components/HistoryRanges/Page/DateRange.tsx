@@ -22,6 +22,16 @@ const Container = styled.div`
   .endData {
     color: ${({ theme }) => theme.colors.secondary};
   }
+
+	@media (max-width: 768px) {
+	 	min-height: 100vh;      
+    align-items: flex-start; 
+    padding-top: 160px; 
+
+		h1 {
+			font-size: 55px;
+		}
+	}
 `;
 
 function animateNumber(

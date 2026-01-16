@@ -24,6 +24,10 @@ const Circle = styled.div<{ rot: number }>`
   transform: rotate(${({ rot }) => rot}deg);
   transition: transform 500ms ease;
   transform-origin: 50% 50%;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const DotLabel = styled.span`
@@ -101,8 +105,13 @@ const Dot = styled.button<{ angle: number; active: boolean; rot: number }>`
   &:focus-visible {
     ${expandedStyles}
   }
+    
 
   ${({ active }) => active && expandedStyles}
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 function CircleWithDots({
