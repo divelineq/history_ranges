@@ -40,6 +40,12 @@ const NavBtn = styled.button`
 		cursor: pointer;
 		background: ${({ theme }) => theme.colors.border};
 	}
+
+	@media (max-width: 768px) {
+		width: 28px;
+		height: 28px;
+		z-index: 10;
+	}
 `;
 
 function Controls({

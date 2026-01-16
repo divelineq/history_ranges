@@ -25,8 +25,8 @@ const Container = styled.div`
 
 	@media (max-width: 768px) {
 	 	min-height: 100vh;      
-    align-items: flex-start; 
-    padding-top: 160px; 
+    align-items: flex-center; 
+    
 
 		h1 {
 			font-size: 55px;
